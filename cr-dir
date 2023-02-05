@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+
+echo "What is the name of the folder you want to create?"
+read file
+
+echo "Is $file the file you want to create?"
+read ans
+
+if [ $ans = y ]
+then
+	mkdir $file
+	echo "$file has been created."
+else
+	echo "Request has been cancelled"
+fi
